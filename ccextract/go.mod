@@ -1,4 +1,4 @@
-module github.com/as/tmp/ccextractor
+module github.com/as/tmp/ccextract
 
 go 1.16
 
