@@ -1,6 +1,6 @@
 /*
 	docker build . -t ccextractor # if you dont have it on local machine
-	go build && ./ccextractor -i `aws s3 presign url`
+	go build && ./ccextract -i `aws s3 presign url`
 */
 package main
 
