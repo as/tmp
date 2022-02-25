@@ -58,7 +58,7 @@ func main() {
 // memfd creates an in-memory file that can be passed
 // into a child process for reading or writing.
 func memfd() (*os.File, error) {
-	name := "ccextractor"
+	name := "ccextractor" // this does not have to be unique per-process
 	fd, err := unix.MemfdCreate(name, os.O_RDWR)
 	if err != nil {
 		return nil, fmt.Errorf("memfd: %v", err)
